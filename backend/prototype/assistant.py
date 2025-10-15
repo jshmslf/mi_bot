@@ -121,7 +121,7 @@ class ChatBotAssistant:
             confidence, predicted_class = torch.max(probs, dim=1)
 
         if confidence < 0.6:
-            return "Sorry, I didn't quite get that. Can you rephrase?"
+            return "Sorry, I didn't quite get that. Can you repeat it?"
         
         intent_tag = self.intents[predicted_class.item()]
         if self.function_mappings and intent_tag in self.function_mappings:

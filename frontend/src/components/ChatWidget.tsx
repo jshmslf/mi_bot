@@ -5,7 +5,6 @@ import React, { useEffect, useState } from 'react'
 import { ChevronDown, MessageCircle, X, XIcon } from "lucide-react";
 import ChatBox from './ChatBox';
 import MessageInput from './MessageInput';
-import Image from 'next/image';
 
 const ChatWidget: React.FC = () => {
     const [open, setOpen] = useState(false);
